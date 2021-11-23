@@ -1,0 +1,52 @@
+@mixin mobile {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: map-get($breakpoints , tablet)) {
+    @content;
+  }
+}
+@mixin large-title {
+  font-family: "Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -1px;
+}
+@mixin medium-title {
+  font-family: "Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.63px;
+}
+@mixin small-title {
+  font-family: "Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.8px;
+}
+@mixin xsmall-title {
+  font-family: "Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+}
+@mixin big-body {
+  font-family: "Spartan", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+}
+@mixin medium-body {
+  font-family: "Spartan", sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 18px;
+  letter-spacing: -0.23px;
+}
