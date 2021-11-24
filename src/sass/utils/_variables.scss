@@ -1,0 +1,37 @@
+$primary-color-base: hsl(252, 94%, 67%);
+$primary-color-light: hsl(252, 100%, 73%);
+
+$secondary-color-base: hsl(231, 37%, 63%);
+$secondary-color-dark: hsl(231, 20%, 61%);
+$secondary-color-light: hsl(231, 73%, 93%);
+
+$dark-theme-base: hsl(233, 31%, 17%);
+$dark-theme-dark: hsl(233, 31%, 11%);
+$dark-theme-light: hsl(233, 30%, 21%);
+
+$error-color-base: hsl(0, 80%, 63%);
+$error-color-light: hsl(0, 100%, 80%);
+
+$background-light: hsl(240, 27%, 98%);
+$background-dark: $dark-theme-dark;
+
+$emphase-light: white;
+$emphase-dark: hsl(228, 29%, 7%);
+
+$themes: (
+  light: (
+    text: $secondary-color-dark,
+    emphase: $emphase-dark,
+    background: $background-light,
+  ),
+  dark: (
+    text: $secondary-color-light,
+    emphase: $emphase-light,
+    background: $background-dark,
+  ),
+);
+
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+);

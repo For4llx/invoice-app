@@ -15,9 +15,10 @@ a {
 button,
 input {
   border: hidden;
-  &:focus {
-    outline: none;
-  }
+}
+button:focus,
+input:focus {
+  outline: none;
 }
 
 body {
@@ -27,12 +28,14 @@ body {
   background-size: cover;
   */
 }
+
 .App {
   background-color: red;
   height: 10rem;
   width: 100%;
-
-  &--dark-theme {
-    background-color: black;
-  }
 }
+.App--dark-theme {
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
